@@ -1,0 +1,44 @@
+body {
+    overflow: hidden;
+    background-color: rgba(0, 82, 0, 0.596);
+}
+
+#gameScreen {
+    background-color: black;
+    border: 5px solid greenyellow;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#stop {
+    width: 500px;
+    height: 150px;
+    background-color: rgb(198, 255, 112);
+    border: 5px solid black;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+    color: green;
+    font-family: "Saira Stencil One", cursive;
+}
+
+#stop:hover {
+    color: rgb(0, 202, 0);
+    background-color: red;
+}
+
+#copyRight {
+    float: left;
+    font-size: 15px;
+    color: rgb(0, 39, 17);
+    font-family: "Saira Stencil One", cursive;
+}
