@@ -24,7 +24,7 @@ const screen = {
 
 const speed = {
     global: 1,
-    bild: 2, // 2
+    bild: 2,
 };
 
 const move = {
@@ -50,8 +50,6 @@ class bild {
     }
 
     draw() {
-        // ctx.fillStyle = "red";
-        // ctx.fillRect(this.x, this.y, this.w, this.h);
         ctx.drawImage(brickImage, this.x, this.y, this.w, this.h)
     }
 
@@ -67,7 +65,7 @@ class bild {
 }
 window.onload = setUpStart();
 function setUpStart() {
-    size = new Size(150, 40, 170, 90); // width = 150
+    size = new Size(150, 40, 170, 90);
     drawStartButton();
     clickStart();
 }
@@ -131,7 +129,6 @@ function clickStop() {
     stopButton.addEventListener("click", (event) => {
         clickAudio.volume = 0.1;
         clickAudio.play();
-        score++;
         click = true;
     });
 }
@@ -145,6 +142,7 @@ function mainLoop() {
         setBild();
         if (!lose) {
             setNewBild();
+            score++;
         }
         click = false;
     }
